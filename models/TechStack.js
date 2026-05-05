@@ -6,12 +6,12 @@ const techStackSchema = new mongoose.Schema({
         required: true
     },
     imageUrl: {
-        type: String // Optional background image for the category card
+        type: String 
     },
     technologies: [{
         name: String,
-        icon: String, // We'll store simple string names to map to React Icons on frontend
-        color: String // Tailwind color classes for the icon
+        icon: String, 
+        color: String 
     }]
 }, { timestamps: true });
 

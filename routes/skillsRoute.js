@@ -1,16 +1,16 @@
-// routes/projectsRoute.js
+// routes/skillsRoute.js
 const express = require('express');
 const router = express.Router();
-const projectsControler = require('../controlers/projectsControler');
+const skillsController = require('../controlers/skillsControler');
 const verifyJWT = require('../middleware/verifyJWT');
 const upload = require('../middleware/upload');
 
 router.route('/')
-  .get(projectsControler.getProjects)
-  .post(verifyJWT, upload.single('projectImage'), projectsControler.createProject);
+  .get(skillsController.getSkills)
+  .post(verifyJWT, upload.single('categoryImage'), skillsController.createSkill);  // ✅
 
 router.route('/:id')
-  .put(verifyJWT, upload.single('projectImage'), projectsControler.updateProject)
-  .delete(verifyJWT, projectsControler.deleteProject);
+  .put(verifyJWT, upload.single('categoryImage'), skillsController.updateSkill)    // ✅
+  .delete(verifyJWT, skillsController.deleteSkill);
 
 module.exports = router;
