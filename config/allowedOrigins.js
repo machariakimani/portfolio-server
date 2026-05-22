@@ -4,5 +4,7 @@ const allowedOrigins = [
   "http://127.0.0.1:5173",
   "https://devmacharia.vercel.app",
   "https://www.devmacharia.vercel.app",
+  "https://macharia-dev.onrender.com",
+  "https://www.macharia-dev.onrender.com"
 ];
 module.exports = allowedOrigins;
