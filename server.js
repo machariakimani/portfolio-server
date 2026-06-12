@@ -28,7 +28,7 @@ app.use("/services", require("./routes/servicesRoute"))
 app.use("/skills", require("./routes/skillsRoute"))
 app.use("/hero", require("./routes/heroRoute"))
 app.use("/upload", require("./routes/uploadRoute"))
-//app.use("/messages", require("./routes/messageRoute"))
+app.use("/messages", require("./routes/messageRoute"))
 //app.use("/estimates", require("./routes/estimateRoute"))
 
 
